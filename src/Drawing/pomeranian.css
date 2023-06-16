@@ -1,0 +1,398 @@
+.pomeDrawing {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pomeranian{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pomeBodyWh{
+    width: 190px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 80px;
+    position: absolute;
+    z-index: 900;
+}
+
+.pomeBody{
+    width: 200px;
+    height: 210px;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    z-index: 800;
+}
+
+.pomeHair1{
+    display: flex;
+    justify-content: center;
+}
+
+.pomeEarLeft{
+    width: 35px;
+    height: 35px;
+    background-color: #dcdcdc;
+    border-radius: 70px 150px 70px 500px;
+    z-index: 1000;
+    transform: rotate(-80deg);
+    margin-left:5px;
+}
+
+.pomeEarRight{
+    width: 35px;
+    height: 35px;
+    background-color: #dcdcdc;
+    border-radius: 70px 150px 70px 500px;
+    z-index: 1000;
+    transform: rotate(-10deg);
+    margin-right:5px;
+}
+
+.pomeEarIn{
+    width: 30px;
+    height: 30px;
+    margin-top:5px;
+    background-color: #fff;
+    border-radius: 70px 150px 70px 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pomeEarIn >div{
+    width: 15px;
+    height: 15px;
+    background-color: #ffd8d8;
+    border-radius: 70px 150px 70px 500px;
+}
+
+.pomeHair1 div:nth-child(2){
+    width: 60px;
+    height: 70px;
+    background-color: #fff;
+    margin-top:-15px;
+    margin-right:-5px;
+    border: 5px solid #dcdcdc;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transform: rotate(-60deg);
+}
+
+.pomeHair1 div:nth-child(3){
+    width: 60px;
+    height: 70px;
+    background-color: #fff;
+    margin-top:-15px;
+    margin-left:-5px;
+    border: 5px solid #dcdcdc;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transform: rotate(60deg);
+}
+
+
+.pomeHair2{
+    display: flex;
+    margin-top:-35px;
+    margin-left:-15px;
+}
+
+.pomeHair2 div{
+    min-width: 115px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 100px;
+    box-sizing: border-box;
+    border:5px solid #dcdcdc;
+}
+
+.pomeHair3{
+    display: flex;
+    margin-top:-35px;
+    margin-left:-15px;
+}
+
+.pomeHair3 div{
+    min-width: 115px;
+    height: 95px;
+    background-color: #fff;
+    border-radius: 100px;
+    box-sizing: border-box;
+    border:5px solid #dcdcdc;
+}
+
+.pomeHair4{
+    display: flex;
+    align-items: flex-end;
+    margin-top:-80px;
+    justify-content: center;
+}
+
+.pomeHair4 div:nth-child(1){
+   width: 60px;
+   height: 60px;
+   background-color: #fff;
+   border: 5px solid #dcdcdc;
+   box-sizing: border-box;
+   border-radius: 100px;
+   transform: rotate(-60deg);
+}
+
+.pomeHair4 div:nth-child(2){
+    width: 160px;
+    height: 120px;
+    background-color: #fff;
+    margin-bottom:-10px;
+    margin-left:-20px;
+    border:5px solid #dcdcdc;
+    box-sizing: border-box;
+    border-radius: 100px;
+ }
+
+ .pomeHair4 div:nth-child(3){
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 5px solid #dcdcdc;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transform: rotate(60deg);
+    margin-left:-20px;
+ }
+
+.pomeLegs{
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    bottom:-10px;
+}
+
+.pomeLegs >div{
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #dcdcdc;
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left:30px;
+    margin-right:30px;
+}
+ 
+.pomeLegs >div >div{
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #fff;
+    width: 20px;
+    height: 40px;
+    margin-top:-5px;
+}
+
+.pomeTail{
+    position: absolute;
+    z-index: 750;
+    right:-30px;
+    top:100px;
+    transform: rotate(10deg);
+    animation:  tail 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.pomeTailBorder{
+    position: absolute;
+    z-index: 700;
+    right:-40px;
+    top:90px;
+    transform: rotate(10deg);
+    animation:  tail 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tail{
+    0%{
+        transform: rotate(10deg);
+    }25%{
+        transform: rotate(15deg);
+    }50%{
+        transform: rotate(20deg);
+    }70%{
+        transform: rotate(15deg);
+    }100%{
+        transform: rotate(10deg);
+    }
+}
+
+.pomeTailIn1{
+    border-radius: 100px;
+    width: 70px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.pomeTailIn2{
+    border-radius: 100px;
+    width: 80px;
+    height: 50px;
+    background-color: #fff;
+    margin-top:-30px;
+}
+
+.pomeTailIn3{
+    border-radius: 100px;
+    width: 70px;
+    height: 50px;
+    background-color: #fff;
+    margin-top:-30px;
+
+}
+
+.pomeTailBorder div{
+    border: 5px solid #dcdcdc;
+}
+
+.pomeFace{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:-30px;
+    z-index: 950;
+}
+
+.pomeEye{
+    display: flex;
+    z-index: 1000;
+    height: 15px;
+    align-items: center;
+}
+
+.pomeEye .eye{
+    width: 15px;
+    background-color: #969696;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 100px;
+    margin-right:18px;
+    margin-left:18px;
+    
+    animation:  eye 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.pomeEye .pupil{
+    width: 5px;
+    background-color: #fff;
+    margin:2px;
+    border-radius: 100px;
+
+    
+    animation:  pupil 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes eye{
+    0%{
+        height: 15px;
+    }50%{
+        height: 5px;
+    }100%{
+        height: 15px;
+    }
+}
+
+@keyframes pupil{
+    0%{
+        height: 5px;
+    }25%{
+        height: 0px;
+    }50%{
+        height: 0px;
+    }100%{
+        height: 5px;
+    }
+}
+
+.pomeFaceBottom{
+    display: flex;
+    margin-top:-10px;
+}
+
+.pomeFaceBottom .cheek{
+    width: 30px;
+    height: 30px;
+    background-color: #ffd8d8;
+    border-radius: 100px;
+}
+
+.pomeFaceBottom .cheek .left{
+    width: 10px;
+    height: 10px;
+    margin:13px 14px 5px 5px;
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.pomeFaceBottom .cheek .right{
+    width: 10px;
+    height: 10px;
+    margin:13px 5px 5px 14px;
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.faceBottomCenter{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    align-items: center;
+    margin-top:5px;
+}
+
+.faceBottomCenter .nose{
+    width: 17px;
+    height: 14px;
+    background-color: #969696;
+    border-radius: 100px;
+}
+
+.faceBottomCenter .philtrum{
+    width: 5px;
+    height: 17px;
+    background-color: #969696;
+    border-radius: 100px;
+    margin-top:-5px;
+}
+
+.faceBottomCenter .lips{
+    width: 30px;
+    height: 5px;
+    background-color: #969696;
+    margin-top:-5px;
+    border-radius: 100px;
+    z-index: 1000;
+}
+
+.faceBottomCenter .mouth{
+    width: 12px;
+    height: 12px;
+    margin-top:-5px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 5px solid #969696;
+    background-color: #ffd8d8;
+}

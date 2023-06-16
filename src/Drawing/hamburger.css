@@ -1,0 +1,16 @@
+.hamburgerDrawing{
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hamburger{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
