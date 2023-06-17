@@ -4,6 +4,21 @@ import Pomeranian from './Drawing/Pomeranian'
 import Hamburger from './Drawing/Hamburger'
 
 const App = (() => {
+  const setOneVh = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+
+  setOneVh()
+
+  useEffect(()=>{
+    setOneVh();
+
+    function onResize(){ 
+        setOneVh();
+    }
+    window.addEventListener('resize',onResize);
+  },[])
 
   const ddList = [
     {name:'포메라니안',dd:<Pomeranian/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/embed/yLQONpW?default-tab=html%2Cresult'},
@@ -22,7 +37,7 @@ const App = (() => {
   const [dialog,setDialog] = useState(false)
 
    const handleCode = (link) => {
-      window.open('https://link.coupang.com/a/YgGg1')
+      // window.open('https://link.coupang.com/a/YgGg1')
       setDialog(true)
       // window.open(link)
    }
@@ -47,9 +62,10 @@ const App = (() => {
       <div className='imgBox'>
         <div style={{bottom:0,padding:20,left:0,textAlign:'center',width:'100%',position:'absolute',zIndex:2000,
         maxWidth:'100%',boxSizing:'border-box'}}>
-          <div onClick={()=>handleCode(codeLink)} style={{padding:10,border:'1px solid #dcdcdc',backgroundColor:'#fff'}}>쿠팡 보고 코드 받기</div>
-          <div style={{fontSize:12,color:'#969696',marginTop:10,boxSizing:'border-box'}}>
-            * 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.</div>
+          <div onClick={()=>handleCode(codeLink)}
+          style={{padding:15,border:'1px solid #dcdcdc',backgroundColor:'#fff'}}>CSS / HTML 코드</div>
+          {/* <div style={{fontSize:12,color:'#969696',marginTop:10,boxSizing:'border-box'}}>
+            * 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.</div> */}
         </div> 
       
         {dd}
@@ -58,14 +74,13 @@ const App = (() => {
 
 
        {dialog?
-        <div style={{display:'flex',flexDirection:'column',position:'absolute',zIndex:9000,width:'100vw',height:'100vh',
-          alignItems:'center',justifyContent:'center',backgroundColor:'#000000aa'}}>
+        <div className='dialogLayout'>
           <div style={{padding:15,fontWeight:700,color:'#fff',zIndex:9999,marginBottom:10}} onClick={()=>setDialog(false)}>
-            X 코드 닫기
+            X 닫기
           </div>
           <iframe style={{width:'80%',height:'calc(80% - 50px)',maxHeight:700,border:0}} src={codeLink}>
           
-        </iframe>
+          </iframe>
         </div>:<></>
       }
 
