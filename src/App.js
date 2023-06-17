@@ -48,12 +48,12 @@ const App = (() => {
     <div className="App">
 
       {/* 테스트중 */}
-      {/* <div>
+      <div>
         <Hamburger/>        
-      </div> */}
+      </div>
 
       
-      <div className='drawingList'>
+      {/* <div className='drawingList'>
         {ddList.map((val,idx)=>
           <div key={idx} className={ddIdx===idx?'dd ddCkOn':'dd ddCkOff'} onClick={()=>handleDd(val.dd,val.codeLink,idx)}>
             <div>{val.name}</div>
@@ -65,12 +65,11 @@ const App = (() => {
         maxWidth:'100%',boxSizing:'border-box'}}>
           <div onClick={()=>handleCode(codeLink)}
           style={{padding:15,border:'1px solid #dcdcdc',backgroundColor:'#fff'}}>CSS / HTML 코드</div>
-          {/* <div style={{fontSize:12,color:'#969696',marginTop:10,boxSizing:'border-box'}}>
-            * 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.</div> */}
+ 
         </div> 
       
         {dd}
-      </div>
+      </div> */}
 
 
 
