@@ -48,12 +48,12 @@ const App = (() => {
     <div className="App">
 
       {/* 테스트중 */}
-      <div>
+      {/* <div>
         <Hamburger/>        
-      </div>
+      </div> */}
 
       
-      {/* <div className='drawingList'>
+      <div className='drawingList'>
         {ddList.map((val,idx)=>
           <div key={idx} className={ddIdx===idx?'dd ddCkOn':'dd ddCkOff'} onClick={()=>handleDd(val.dd,val.codeLink,idx)}>
             <div>{val.name}</div>
@@ -69,7 +69,7 @@ const App = (() => {
         </div> 
       
         {dd}
-      </div> */}
+      </div>
 
 
 
