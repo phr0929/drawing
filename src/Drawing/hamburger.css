@@ -1,3 +1,24 @@
+.rotate40{
+    transform: rotate(40deg);
+}
+
+.rotate45{
+    transform: rotate(45deg);
+}
+
+.rotate60{
+    transform: rotate(60deg);
+}
+
+.rotateMinus40{
+    transform: rotate(-40deg);
+}
+
+.rotateMinus60{
+    transform: rotate(-60deg);
+}
+
+
 .hamburgerDrawing{
     width: 100%;
     height: 100%;
@@ -13,6 +34,158 @@
     justify-content: flex-end;
     height: 190px;
 }
+
+.bunBottom{
+    width: 127px;
+    height: 25px;
+    background-color: #eaa553;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top:-3px;
+    border: 3px solid #323232;
+    box-sizing: border-box;
+    z-index: 600;
+}
+
+.onion{
+    display: flex;
+    margin-top:-3px;
+}
+
+.onion div{
+    width: 42px;
+    height: 18px;
+    background-color: #f4f4e6;
+    border: 3px solid #323232;
+    box-sizing: border-box;
+    margin: -1.5px;
+}
+
+.patty{
+    width: 125px;
+    height: 20px;
+    background-color: #7c5631;
+    border-radius: 8px;
+    margin-top: -10px;
+    border: 3px solid #323232;
+    box-sizing: border-box;
+    z-index: 700;
+}
+
+
+.cheezeLine{
+    width: 117px;
+    height: 7px;
+    background-color: #ffe67d;
+    border-radius: 15px;
+    z-index: 900;
+}
+
+.cheezeLineBorder{
+    width: 123px;
+    height: 13px;
+    margin-top:-10px;
+    background-color: #323232;
+    border-radius: 15px;
+    z-index: 800;
+}
+
+.cheeze{
+    display: flex;
+    align-items: flex-end;
+    margin-top:-30px;
+    z-index: 800;
+}
+
+.cheeze div{
+    width:35px;
+    height:35px;
+    background-color:#ffe67d;
+    border-radius:10px;
+    border:3px solid #323232;
+    box-sizing:border-box;
+}
+
+.tomato{
+    display: flex;
+    margin-top:-5px;
+}
+
+.tomato div{
+    width: 61px;
+    height: 16px;
+    margin: -1.5px;
+    background-color: #d92620;
+    z-index: 1000;
+    border:3px solid #323232;
+    box-sizing: border-box;
+}
+
+.lettuce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:-10px;
+}
+
+.lettuceLine{
+    width: 116px;
+    height: 14px;
+    background-color: #11b743;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1250;
+}
+
+.lettuceLeaf{
+    display: flex;
+    align-items: flex-end;
+    z-index: 1200;    
+    margin-top:-13px;
+}
+
+.lettuceLeaf div{
+    width: 20px;
+    height: 23px;
+    margin:-1.5px;
+    background-color: #11b743;
+    border:3px solid #323232;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.bunTop{
+    width: 127px;
+    height: 63px;
+    background-color: #eaa553;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 800px;
+    border-top-left-radius: 800px;
+    margin-top:-5px;
+    border:3px solid #323232;
+    box-sizing: border-box;
+    z-index: 1300;
+    display: flex;
+    flex-direction: column;
+}
+
+.bunTop div{
+    display: flex;
+    justify-content: center;
+}
+
+.sesame{
+    width: 1px;
+    height: 3px;
+    background-color: #f3e7ce;
+    border-radius: 50px;
+    border:3px solid #323232;
+    margin:7px;
+}
+
 
 .bubble1{
     background-color:#fff;
