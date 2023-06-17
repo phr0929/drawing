@@ -38,8 +38,9 @@ const App = (() => {
 
    const handleCode = (link) => {
       // window.open('https://link.coupang.com/a/YgGg1')
-      setDialog(true)
-      // window.open(link)
+      // setDialog(true)
+      
+      window.open(codeLink)
    }
 
 
@@ -73,7 +74,7 @@ const App = (() => {
 
 
 
-       {dialog?
+       {/* {dialog?
         <div className='dialogLayout'>
           <div style={{padding:15,fontWeight:700,color:'#fff',zIndex:9999,marginBottom:10}} onClick={()=>setDialog(false)}>
             X 닫기
@@ -82,7 +83,7 @@ const App = (() => {
           
           </iframe>
         </div>:<></>
-      }
+      } */}
 
 
 
