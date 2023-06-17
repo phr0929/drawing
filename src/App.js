@@ -4,7 +4,6 @@ import Pomeranian from './Drawing/Pomeranian'
 import Hamburger from './Drawing/Hamburger'
 
 const App = (() => {
-   
 
   const ddList = [
     {name:'포메라니안',dd:<Pomeranian/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/embed/yLQONpW?default-tab=html%2Cresult'},
@@ -46,7 +45,7 @@ const App = (() => {
         )}
       </div>
       <div className='imgBox'>
-        <div style={{bottom:50,padding:10,left:0,textAlign:'center',width:'100%',position:'absolute',zIndex:2000,
+        <div style={{bottom:0,padding:20,left:0,textAlign:'center',width:'100%',position:'absolute',zIndex:2000,
         maxWidth:'100%',boxSizing:'border-box'}}>
           <div onClick={()=>handleCode(codeLink)} style={{padding:10,border:'1px solid #dcdcdc',backgroundColor:'#fff'}}>쿠팡 보고 코드 받기</div>
           <div style={{fontSize:12,color:'#969696',marginTop:10,boxSizing:'border-box'}}>
@@ -69,6 +68,9 @@ const App = (() => {
         </iframe>
         </div>:<></>
       }
+
+
+
     </div>
   );
 })
