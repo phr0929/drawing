@@ -18,10 +18,9 @@
     transform: rotate(-60deg);
 }
 
-
 .hamburgerDrawing{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,6 +32,7 @@
     align-items: center;
     justify-content: flex-end;
     height: 190px;
+    width:auto;
 }
 
 .bunBottom{
@@ -73,7 +73,6 @@
     box-sizing: border-box;
     z-index: 700;
 }
-
 
 .cheezeLine{
     width: 117px;
@@ -186,9 +185,113 @@
     margin:7px;
 }
 
+.cola{
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 110px;
+    max-width: 110px;
+    min-width: 110px;
+    height: 190px;
+}
+
+.colaCup{
+    width: 64px;
+    height: 0px;
+    position: absolute;
+    border-top: 144px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-radius: 7px;
+    z-index: 800;
+    right:3px;
+    bottom:3px
+}
+
+
+.colaCupBorder{
+    position: absolute;
+    z-index: 700;
+    width: 70px;
+    height: 0px;
+    right: 0px;
+    bottom:0px;
+    border-radius: 10px;
+    border-top:150px solid #323232;
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+}
+
+
+
+.straw{
+    position: absolute;
+    z-index: 1100;
+    width: 7px;
+    height: 180px;
+    background-color: #d92620;
+    transform: rotate(6deg);
+    border-radius: 2px;
+    right:31px;
+    bottom:14px;
+    border:3px solid #000;
+}
+
+.colaContents{
+    width: 110px;
+    height: 150px;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom:5px;
+}
+
+.colaContents div{
+    width:60px;
+    height:0px;
+    border-radius:5px;
+    border-top:120px solid #3f101acc;
+    border-left:16px solid transparent;
+    border-right:16px solid transparent;    
+}
+
+.colaOutside{
+    z-index: 1200;
+}
+
+.colaInside{
+    z-index: 900;
+}
+
+.bubble{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1300;
+    left:0px;
+    bottom:20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bubble div{
+    display: flex;
+}
+
+.bubble span{
+    background-color:#fff;
+}
 
 .bubble1{
-    background-color:#fff;
+    width: 4px;
+    height: 4px;
+    margin: 8px;
     animation: bubble 0.7s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -196,7 +299,9 @@
 }
 
 .bubble2{
-    background-color:#fff;
+    width: 3px;
+    height: 3px;
+    margin: 16px;
     animation: bubble 0.7s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
@@ -204,7 +309,9 @@
 }
 
 .bubble3{
-    background-color:#fff;
+    width: 4px;
+    height: 4px;
+    margin: 7px;
     animation: bubble 0.7s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
@@ -212,7 +319,9 @@
 }
 
 .bubble4{
-    background-color:#fff;
+    width: 3px;
+    height: 3px;
+    margin: 7px;
     animation: bubble 0.7s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
@@ -220,7 +329,9 @@
 }
 
 .bubble5{
-    background-color:#fff;
+    width: 5px;
+    height: 5px;
+    margin: 12px;
     animation: bubble 0.7s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
@@ -228,7 +339,9 @@
 }
 
 .bubble6{
-    background-color:#fff;
+    width: 4px;
+    height: 4px;
+    margin: 8px;
     animation: bubble 0.7s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -236,7 +349,9 @@
 }
 
 .bubble7{
-    background-color:#fff;
+    width: 4px;
+    height: 4px;
+    margin: 5px;
     animation: bubble 0.7s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
@@ -244,7 +359,9 @@
 }
 
 .bubble8{
-    background-color:#fff;
+    width: 3px;
+    height: 3px;
+    margin: 12px;
     animation: bubble 0.7s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -252,7 +369,9 @@
 }
 
 .bubble9{
-    background-color:#fff;
+    width: 4px;
+    height: 4px;
+    margin: 5px;
     animation: bubble 0.7s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
@@ -263,13 +382,10 @@
     0%{
         transform: scale(0.5);
     }20%{
-
         transform: scale(0.7);
     }40%{
-
         transform: scale(1);
     }60%{
-
         transform: scale(0.7);
     }80%{
         transform: scale(0.5);
