@@ -1,90 +1,86 @@
 .rotate40{
     transform: rotate(40deg);
 }
-
 .rotate45{
     transform: rotate(45deg);
 }
-
 .rotate60{
     transform: rotate(60deg);
 }
-
 .rotateMinus40{
     transform: rotate(-40deg);
 }
-
 .rotateMinus60{
     transform: rotate(-60deg);
 }
 
 .hamburgerDrawing{
-    width: 100vw;
-    height: 100vh;
+    width:100vw;
+    height:100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hamburger{
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     height: 190px;
-    width:auto;
+    width: auto;
 }
 
 .bunBottom{
-    width: 127px;
-    height: 25px;
+    width:127px;
+    height:25px;
     background-color: #eaa553;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-top:-3px;
-    border: 3px solid #323232;
+    border:3px solid #323232;
     box-sizing: border-box;
     z-index: 600;
 }
 
 .onion{
     display: flex;
-    margin-top:-3px;
+    margin-top: -3px;
 }
 
 .onion div{
     width: 42px;
     height: 18px;
     background-color: #f4f4e6;
-    border: 3px solid #323232;
+    border:3px solid #323232;
     box-sizing: border-box;
-    margin: -1.5px;
+    margin:-1.5px;
 }
 
 .patty{
-    width: 125px;
-    height: 20px;
+    width:125px;
+    height:20px;
     background-color: #7c5631;
+    border:3px solid #323232;
     border-radius: 8px;
-    margin-top: -10px;
-    border: 3px solid #323232;
+    margin-top:-10px;
     box-sizing: border-box;
     z-index: 700;
 }
 
 .cheezeLine{
-    width: 117px;
-    height: 7px;
+    width:117px;
+    height:7px;
     background-color: #ffe67d;
     border-radius: 15px;
     z-index: 900;
 }
 
 .cheezeLineBorder{
-    width: 123px;
-    height: 13px;
+    width:123px;
+    height:13px;
     margin-top:-10px;
     background-color: #323232;
     border-radius: 15px;
@@ -100,11 +96,11 @@
 
 .cheeze div{
     width:35px;
-    height:35px;
-    background-color:#ffe67d;
-    border-radius:10px;
+    height: 35px;
+    background-color: #ffe67d;
+    border-radius: 10px;
     border:3px solid #323232;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 .tomato{
@@ -113,9 +109,9 @@
 }
 
 .tomato div{
-    width: 61px;
-    height: 16px;
-    margin: -1.5px;
+    width:61px;
+    height:16px;
+    margin:-1.5px;
     background-color: #d92620;
     z-index: 1000;
     border:3px solid #323232;
@@ -133,21 +129,21 @@
     width: 116px;
     height: 14px;
     background-color: #11b743;
+    z-index: 1250;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    z-index: 1250;
 }
 
 .lettuceLeaf{
     display: flex;
     align-items: flex-end;
-    z-index: 1200;    
+    z-index: 1200;
     margin-top:-13px;
 }
 
 .lettuceLeaf div{
-    width: 20px;
-    height: 23px;
+    width:20px;
+    height:23px;
     margin:-1.5px;
     background-color: #11b743;
     border:3px solid #323232;
@@ -157,8 +153,9 @@
 
 .bunTop{
     width: 127px;
-    height: 63px;
+    height:63px;
     background-color: #eaa553;
+    z-index: 1300;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
     border-top-right-radius: 800px;
@@ -166,7 +163,6 @@
     margin-top:-5px;
     border:3px solid #323232;
     box-sizing: border-box;
-    z-index: 1300;
     display: flex;
     flex-direction: column;
 }
@@ -190,55 +186,54 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    width: 110px;
-    max-width: 110px;
+    width:110px;
     min-width: 110px;
+    max-width: 110px;
     height: 190px;
 }
-
-.colaCup{
-    width: 64px;
-    height: 0px;
-    position: absolute;
-    border-top: 144px solid #fff;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-radius: 7px;
-    z-index: 800;
-    right:3px;
-    bottom:3px
-}
-
 
 .colaCupBorder{
     position: absolute;
     z-index: 700;
-    width: 70px;
-    height: 0px;
-    right: 0px;
-    bottom:0px;
-    border-radius: 10px;
+    width:70px;
+    height:0px;
     border-top:150px solid #323232;
     border-left:20px solid transparent;
-    border-right:20px solid transparent;
+    border-right: 20px solid transparent;
+    right:0px;
+    bottom:0px;
+    border-radius: 10px;
+}
+
+.colaCup{
+    position: absolute;
+    z-index: 800;
+    width:64px;
+    height:0px;
+    border-top:144px solid #fff;
+    border-left:20px solid transparent;
+    border-right: 20px solid transparent;
+    right:3px;
+    bottom:3px;
+    border-radius: 7px;
 }
 
 .straw{
     position: absolute;
     z-index: 1100;
-    width: 7px;
-    height: 180px;
+    width:7px;
+    height:180px;
     background-color: #d92620;
     transform: rotate(6deg);
     border-radius: 2px;
+    border:3px solid #000;
     right:31px;
     bottom:14px;
-    border:3px solid #000;
 }
 
 .colaContents{
-    width: 110px;
-    height: 150px;
+    width:110px;
+    height:150px;
     position: absolute;
     bottom:0px;
     left:0px;
@@ -251,10 +246,10 @@
 .colaContents div{
     width:60px;
     height:0px;
-    border-radius:5px;
     border-top:120px solid #3f101acc;
     border-left:16px solid transparent;
-    border-right:16px solid transparent;    
+    border-right:16px solid transparent;
+    border-radius: 5px;
 }
 
 .colaOutside{
@@ -283,13 +278,13 @@
 }
 
 .bubble span{
-    background-color:#fff;
+    background-color: #fff;
 }
 
 .bubble1{
-    width: 4px;
-    height: 4px;
-    margin: 8px;
+    width:4px;
+    height:4px;
+    margin:8px;
     animation: bubble 0.7s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -297,9 +292,9 @@
 }
 
 .bubble2{
-    width: 3px;
-    height: 3px;
-    margin: 16px;
+    width:3px;
+    height:3px;
+    margin:16px;
     animation: bubble 0.7s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
@@ -307,9 +302,9 @@
 }
 
 .bubble3{
-    width: 4px;
-    height: 4px;
-    margin: 7px;
+    width:4px;
+    height:4px;
+    margin:7px;
     animation: bubble 0.7s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
@@ -317,9 +312,9 @@
 }
 
 .bubble4{
-    width: 3px;
-    height: 3px;
-    margin: 7px;
+    width:3px;
+    height:3px;
+    margin:7px;
     animation: bubble 0.7s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
@@ -327,9 +322,9 @@
 }
 
 .bubble5{
-    width: 5px;
-    height: 5px;
-    margin: 12px;
+    width:5px;
+    height:5px;
+    margin:12px;
     animation: bubble 0.7s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
@@ -337,9 +332,9 @@
 }
 
 .bubble6{
-    width: 4px;
-    height: 4px;
-    margin: 8px;
+    width:4px;
+    height:4px;
+    margin:8px;
     animation: bubble 0.7s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -347,9 +342,9 @@
 }
 
 .bubble7{
-    width: 4px;
-    height: 4px;
-    margin: 5px;
+    width:4px;
+    height:4px;
+    margin:5px;
     animation: bubble 0.7s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
@@ -357,9 +352,9 @@
 }
 
 .bubble8{
-    width: 3px;
-    height: 3px;
-    margin: 12px;
+    width:3px;
+    height:3px;
+    margin:12px;
     animation: bubble 0.7s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -367,9 +362,9 @@
 }
 
 .bubble9{
-    width: 4px;
-    height: 4px;
-    margin: 5px;
+    width:4px;
+    height:4px;
+    margin:5px;
     animation: bubble 0.7s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
@@ -390,4 +385,5 @@
     }100%{
         transform: scale(0.3);
     }
+
 }
