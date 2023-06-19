@@ -304,14 +304,13 @@ const Building =  (()=> {
           <div style={{display:'flex',flexDirection:'column',zIndex:1150,width:10,height:80,borderRadius:2,border:'3px solid #323232', 
           marginLeft:90,transform:'rotate(10deg)',marginTop:-110,overflow:'hidden',backgroundColor:'#6d4c44'}}>
               <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#6d4c44'}}></div>
-              <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#f9daac'}}></div> 
+              <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#fcf2d2'}}></div> 
               <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#6d4c44'}}></div>
-              <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#f9daac'}}></div>
+              <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#fcf2d2'}}></div>
               <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#6d4c44'}}></div>
-              <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#f9daac'}}></div>
+              <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#fcf2d2'}}></div>
               <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#6d4c44'}}></div>
-              <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#f9daac'}}></div>
-
+              <div style={{width:20,height:9,marginLeft:-5,backgroundColor:'#fcf2d2'}}></div> 
           </div>
 
 
@@ -338,7 +337,7 @@ const Building =  (()=> {
             
             <div style={{display:'flex',flexDirection:'column',position:'absolute',width:96,height:70,zIndex:1000,
             clipPath: 'polygon(20% 100%, 80% 100%, 100% 0, 0 0)',overflow:'hidden',backgroundColor:'#b7805a'}}>
-              <div style={{height:30,width:96,backgroundColor:'#f4d5c1',borderRadius:'50% / 20%'}}></div>
+              <div style={{height:30,width:96,backgroundColor:'#fcf2d2',borderRadius:'50% / 20%'}}></div>
               <div style={{height:40,width:96,backgroundColor:'#b7805a'}}></div>
             </div> 
       
