@@ -5,8 +5,6 @@ const Pomeranian =  (()=> {
 
 
   return (
-
-    
     <div className="pomeDrawing">
       
       <div className='pomeBodyWh'/>
@@ -82,13 +80,9 @@ const Pomeranian =  (()=> {
           <div className='pomeTailIn3'/>
         </div>
         
-      </div>
-
-     
+      </div>     
 
     </div>
-
-
    );
 })
 

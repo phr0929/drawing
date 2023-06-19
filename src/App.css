@@ -28,27 +28,16 @@
   width: 100vw;
   max-width: 100vw;
   border-bottom: 1px solid #dcdcdc;
+  background-color: #ffffff90;
 }
 
 .drawingList::-webkit-scrollbar{
   display: none;
 }
-
-.dialogLayout{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: 9000;
-  width: 100vw;
-  height: calc(var(--vh, 1vh) * 100);
-  max-height: calc(var(--vh, 1vh) * 100);
-  align-items: center;
-  justify-content: center;
-  background-color: #000000aa;
-}
-
-.dd{
-  min-width: 70px;
+ 
+.dd{ 
+  margin:0px 7px 0px 7px;
+  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -85,4 +74,18 @@
   max-width: 100%;
   height: 100%;
   max-height: 100%;
+}
+
+.codeBtn{
+  bottom:20px;
+  padding:15px;
+  left:20px;
+  text-align: center;
+  width: calc(100% - 40px);
+  position: absolute;
+  z-index: 2000;
+  max-width: 100%;
+  box-sizing: border-box;
+  border:1px solid #dcdcdc;
+  background-color: #fff;
 }
