@@ -333,25 +333,25 @@
 
 .topCreamStyle1{
     background-color: #fafafa;
-    box-sizing: inset -3px -5px 1px 4px #f2e6da;
+    box-shadow: inset -3px -5px 1px 4px #f2e6da;
     border:3px solid #42332a;
 }
 
 .topCreamStyle2{
     background-color: #f781a3;
-    box-sizing: inset -3px -5px 1px 4px #e55a81;
+    box-shadow: inset -3px -5px 1px 4px #e55a81;
     border:3px solid #42332a;
 }
 
 .topCreamStyle3{
     background-color: #995936;
-    box-sizing: inset -3px -5px 1px 4px #7c442e;
+    box-shadow: inset -3px -5px 1px 4px #7c442e;
     border:3px solid #231007;
 }
 
 .topCreamStyle4{
     background-color: #a4d8ca;
-    box-sizing: inset -3px -5px 1px 4px #6daf9e;
+    box-shadow: inset -3px -5px 1px 4px #6daf9e;
     border:3px solid #42332a;
 }
 
