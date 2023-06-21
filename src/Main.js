@@ -41,7 +41,7 @@ const Main = (() => {
             </div>
             <div className='imgBox'> 
             <div className='codeBtn' onClick={()=>handleCode(codeLink)}>
-                CSS / HTML 코드
+                CSS / HTML 코드 보러가기
             </div>
 
             {dd}
