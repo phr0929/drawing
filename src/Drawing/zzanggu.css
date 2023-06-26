@@ -1,0 +1,977 @@
+.zzangguDrawing{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.zzanggu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.zzangguFace{
+    height: 155px;
+    width: 196px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-left:10px;
+}
+
+.zzangguForehead{
+    position: absolute;
+    z-index: 1050;
+    width: 150px;
+    height: 140px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-left:2px;
+}
+
+.zzangguForehead div:nth-child(1){
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background-color: #f5d5c2;
+    border-radius: 50px;
+    margin:20px 0px 0px -12px;
+    z-index: 1070;
+}
+
+.zzangguForehead div:nth-child(2){
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50px;
+    margin:17px 0px 0px -10px;
+    z-index: 1060;
+}
+
+.zzangguFaceBottom{
+    position: absolute;
+    z-index: 1100;
+    display: flex;
+    width: 190px;
+    height: 90px;
+    top:60px;
+    margin-left:-25px;
+    align-items: flex-end;
+}
+
+.zzangguCheek{
+    display: flex;
+    align-items: center;
+    width:170px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: #f5d5c2;
+}
+
+.zzangguLeftCheek{
+    display: flex;
+    margin:0px 0px 20px 35px;
+}
+
+.zzangguRightCheek{
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    margin:0px 19px 20px 0px;
+}
+
+.zzangguPinkCheek{
+    width:3px;
+    height:11px;
+    border-radius:10px;
+    background-color:#e56572;
+    margin:2px;
+}
+
+.zzangguLeftCheek div{
+    transform: rotate(15deg);
+}
+
+.zzangguRightCheek div{
+    transform: rotate(-15deg);
+}
+
+.zzangguEar{
+    width: 40px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #f5d5c2;
+    margin:0px 0px 20px -20px;
+    transform: rotate(10deg);
+}
+
+.zzangguFaceBottomBorder{
+    position: absolute;
+    z-index: 1040;
+    display: flex;
+    width:196px;
+    height: 90px;
+    top:63px;
+    margin-left:-25px;
+    align-items: flex-end;
+}
+
+.zzangguCheekBorder{
+    width:176px;
+    height:90px;
+    border-radius: 50px;
+    background-color: #000;
+    border:3px solid #000;
+}
+
+.zzangguEarBorder{
+    width:37px;
+    height:50px;
+    border-radius: 50px;
+    background-color: #000;
+    margin:0px 0px 20px -23px;
+    transform: rotate(10deg);
+    border:3px solid #000
+}
+
+.zzangguHair{
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    border-radius: 100px;
+    background-color: #222;
+    border:3px solid #000;
+    box-sizing: border-box;
+}
+
+.zzangguFaceDetail{
+    position: absolute;
+    z-index: 1150;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.zzangguMouse{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.zzangguMouseTop{
+    width: 24px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50px;
+    padding:3px;
+    box-sizing: border-box;
+}
+
+.zzangguMouseTop div{
+    width: 18px;
+    height: 14px;
+    background-color: #f5d5c2;
+    border-radius: 50px;
+}
+
+.zzangguMouseBottom{
+    width: 24px;
+    height: 20px;
+    background-color: #f5d5c2;
+    margin-top:-12px;
+}
+
+.zzangguEyebrow{
+    z-index: 1160;
+    display: flex;
+    margin-top:20px;
+    padding:0px 5px 0px 15px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.zzangguEyebrow div{
+    display: flex;
+    flex:1;
+}
+
+.eyebrowLeft{
+    width: 28px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #222;
+    transform: rotate(-40deg);
+}
+
+.eyebrowRight{
+    width: 28px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #222;
+    transform: rotate(40deg);
+    margin-left: -14px;
+}
+
+.zzangguEyebrowBorder{
+    z-index: 1150;
+    display: flex;
+    margin-top: -12px;
+    padding:0px 5px 0px 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.zzangguEyebrowBorder div{
+    display: flex;
+    flex:1;
+    margin:-3px 0px 0px -3px;
+}
+
+.eyebrowLeftBorder{
+    width: 34px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: #222;
+    transform: rotate(-40deg);
+    border:3px solid #000;
+    box-sizing: border-box;
+}
+
+.eyebrowRightBorder{
+    width: 34px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: #222;
+    transform: rotate(40deg);
+    margin-left:-20px;
+    border:3px solid #000;
+    box-sizing: border-box;
+}
+
+.zzangguEye{
+    display: flex;
+    margin-top:6px;
+    padding:0px 5px 0px 15px;
+    box-sizing: border-box;
+    width:100%;
+}
+
+.zzangguEyeLeft{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+
+.zzangguEyeRight{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+
+.zzangguEyelashes{
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50px;
+    padding:3px;
+    box-sizing: border-box;
+}
+
+.zzangguEyelashes >div{
+    width:34px;
+    height:34px;
+    background-color: #f5d5c2;
+    border-radius: 50px;
+}
+
+.zzangguEyelashesBottom{
+    width: 40px;
+    height: 20px;
+    background-color: #f5d5c2;
+    margin-top:-20px;
+}
+
+.zzangguEyePupil{
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    margin-top:-29px;
+    border-radius: 50px;
+    display: flex;
+    border:3px solid #000;
+    box-sizing: border-box;
+}
+
+.pupilLeft{
+    margin-left:10px;
+    justify-content: flex-end;
+}
+
+.zzangguEyePupilIn{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin:3px;
+    border:3px solid #000;
+}
+
+
+
+/* 몸 */
+.zzangguBody{
+    display: flex;
+    justify-content: center;  
+    height: 180px;
+    margin-top:-20px;
+}
+
+.zzangguNudeBody{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+}
+
+.zzangguArm{
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    z-index: 80;
+}
+
+.zzangguArmLeft{
+    transform: rotate(20deg);
+}
+
+.zzangguArmRight{
+    transform: rotate(-20deg);
+    align-items:flex-end;
+}
+
+.zzangguArm >div:nth-child(1){
+    width: 10px;
+    height: 0px;
+    border-radius: 100px;
+    border-top:90px solid #f5d5c2;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+}
+
+.zzangguArmBorder{
+    display: flex;
+    flex-direction: column;
+    width: 41px;
+    margin:-3px 0px 0px -38px;
+    z-index: 50;
+}
+
+.zzangguArmLeftBorder{
+    transform: rotate(20deg);
+}
+
+.zzangguArmRightBorder{
+    transform: rotate(-20deg);
+    align-items: flex-end;
+}
+
+.zzangguArmBorder >div:nth-child(1){
+    width: 16px;
+    height: 0px;
+    border-radius: 100px;
+    border-top:96px solid #000;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+}
+
+.zzangguFingerLeft{
+    display: flex;
+    margin:-11px 0px 0px 5px;
+    width:20px;
+    height:16px;
+    background-color: #f5d5c2;
+    border-radius: 50px;
+}
+
+.zzangguFingerRight{
+    display: flex;
+    margin:-11px 5px 0px 0px;
+    justify-content: flex-end;
+    width:20px;
+    height:16px;
+    background-color: #f5d5c2;
+    border-radius: 50px;
+}
+
+.zzangguFingerLeftBorder{
+    display: flex;
+    margin:-16px 0px 0px 5px;
+    width:26px;
+    height:22px;
+    background-color: #000;
+    border-radius: 50px;
+}
+
+.zzangguFingerRightBorder{
+    display: flex;
+    margin:-16px 5px 0px 0px;
+    width:26px;
+    height:22px;
+    background-color: #000;
+    border-radius: 50px;
+}
+ 
+
+.zzangguBodyCenter{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.zzangguTorso{
+    display: flex;
+    align-items: flex-end;
+    width: 110px;
+    height: 80px;
+    background-color: #f5d5c2;   
+}
+
+.zzangguTorso div{
+    height: 40px;
+    border-radius: 50px;
+    width: 3px;
+    background-color: #000;
+}
+
+.zzangguTorso span{
+    display: flex;
+    flex:1;
+}
+
+.zzangguDiaper{
+    width: 110px;
+    height: 45px;
+    background-color: #f3f3f3;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    z-index: 150;
+    border:3px solid #000;
+    box-sizing: border-box;
+    margin-top:-5px;
+}
+
+.zzangguLegs{
+    display: flex;
+    margin-top:-25px;
+    width: 100%;
+    z-index: 120;
+}
+
+.zzangguLegsLeft{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    margin-right:5px;
+}
+
+.zzangguLegsRight{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zzangguLegsLeft div:nth-child(1){
+    width: 12px;
+    height: 0px;
+    border-radius: 100px;
+    border-top:80px solid #f5d5c2;
+    border-left:12px solid transparent;
+    border-right:12px solid transparent;
+}
+
+.zzangguLegsRight div:nth-child(1){
+    width: 12px;
+    height: 0px;
+    border-radius: 100px;
+    border-top:80px solid #f5d5c2;
+    border-left:12px solid transparent;
+    border-right:12px solid transparent;
+}
+
+.zzangguFootLeft{
+    width: 0px;
+    height: 7px;
+    border-right: 30px solid #f5d5c2;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    margin:-10px 15px 0px 0px;
+    transform: rotate(-12deg);
+}
+
+.zzangguFootRight{
+    width: 0px;
+    height: 7px;
+    border-left: 30px solid #f5d5c2;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    margin:-10px 0px 0px 15px;
+    transform: rotate(12deg);
+}
+
+.zzangguLegsBorder{
+    display: flex;
+    margin-top:-102px;
+    width: 100%;
+    z-index: 100;
+}
+
+.zzangguLegsLeftBorder{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    margin-right:5px;
+}
+
+.zzangguLegsRightBorder{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zzangguLegsLeftBorder div:nth-child(1){
+    width: 18px;
+    height: 0px;
+    border-radius: 100px;
+    border-top:86px solid #000;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+}
+
+.zzangguLegsRightBorder div:nth-child(1){
+    width: 18px;
+    height: 0px;
+    border-radius: 100px;
+    border-top:86px solid #000;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+}
+
+.zzangguFootLeftBorder{
+    width: 0px;
+    height: 10px;
+    border-radius: 5px;
+    border-right:36px solid #000;
+    border-top:11px solid transparent;
+    border-bottom:8px solid transparent;
+    margin:-8px 15px 0px 0px;
+    transform: rotate(-12deg);
+}
+
+.zzangguFootRightBorder{
+    width: 0px;
+    height: 10px;
+    border-radius: 5px;
+    border-left:36px solid #000;
+    border-top:11px solid transparent;
+    border-bottom:8px solid transparent;
+    margin:-8px 0px 0px 15px;
+    transform: rotate(12deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zzangguDress{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 180px;
+    z-index: 500;
+}
+
+.zzangguDress1 .zzangguTshirt{
+    display: flex;
+    z-index: 600;
+    margin-top:-11px;
+}
+
+.zzangguDress1 .zzangguTshirt >div:nth-child(1){
+    z-index: 650;
+    width: 25px;
+    height: 60px;
+    background-color: #c91f2b;
+    border:3px solid #000;
+    transform: rotate(30deg);
+    margin-right:-20px;
+    overflow: hidden;
+    border-top-left-radius: 25px;
+}
+
+.zzangguDress1 .zzangguTshirt >div:nth-child(2){
+    z-index: 700;
+    width: 125px;
+    height: 100px;
+    background-color: #c91f2b;
+    display: flex;
+    margin-top:10px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    align-items: flex-end;
+}
+
+.zzangguDress1 .zzangguTshirt >div:nth-child(3){
+    z-index: 650;
+    width: 25px;
+    height: 60px;
+    background-color: #c91f2b;
+    border:3px solid #000;
+    transform: rotate(-30deg);
+    margin-left:-20px;
+    overflow: hidden;
+    border-top-right-radius: 25px;
+}
+
+.zzangguTshirtBorder{
+    height: 70px;
+    width: 3px;
+    background-color: #000;
+}
+
+.zzangguTshirtCenter{
+    display: flex;
+    flex:1;
+    height: 100%;
+    border-bottom:3px solid #000;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.zzangguDress1 .zzangguPants{
+    display: flex;
+    margin-top:-5px;
+    z-index: 500;
+    justify-content: center;
+}
+
+.zzangguDress1 .zzangguPants >div:nth-child(1){
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width:55px;
+    height: 30px;
+    background-color: #f7f06d;
+    transform: rotate(5deg);
+    border:3px solid #000;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.zzangguDress1 .zzangguPants >div:nth-child(2){
+    width:10px;
+    height:20px;
+    background-color: #f7f06d;
+    z-index: 550;
+    border-bottom: 3px solid #000;
+    border-radius: 3px;
+    margin: 0px -5px 0px -5px;
+}
+
+.zzangguDress1 .zzangguPants >div:nth-child(3){
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width:55px;
+    height: 30px;
+    background-color: #f7f06d;
+    transform: rotate(-5deg);
+    border:3px solid #000;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.zzangguShoes{
+    margin-bottom:-3px;
+    display: flex;
+    flex:1;
+    align-items: flex-end;
+}
+
+.zzangguShoes span{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zzangguSocksLeft{
+    width: 18px;
+    height: 15px;
+    background-color: #fff;
+    border:3px solid #000;
+    margin-left:14px;
+    z-index: 500;
+}
+
+.zzangguShoesLeft{
+    width: 40px;
+    height: 18px;
+    margin-top:-10px;
+    z-index: 550;
+    margin-left:2px;
+    background-color: #f7f06d;
+    border:3px solid #000;
+    box-sizing: border-box;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.zzangguSocksRight{
+    width: 18px;
+    height: 15px;
+    background-color: #fff;
+    border:3px solid #000;
+    margin-left:-14px;
+    z-index: 500;
+}
+
+.zzangguShoesRight{
+    width: 40px;
+    height: 18px;
+    margin-top:-10px;
+    z-index: 550;
+    margin-right:2px;
+    background-color: #f7f06d;
+    border:3px solid #000;
+    box-sizing: border-box;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+
+
+
+
+.zzangguDress2 .zzangguTshirt{
+    display: flex;
+    z-index: 600;
+    margin-top:-5px;
+}
+
+.zzangguDress2 .zzangguTshirt >div:nth-child(1){
+    z-index: 650;
+    width: 35px;
+    height: 60px;
+    background-color: #cbe2df;
+    border:3px solid #000;
+    transform: rotate(20deg);
+    margin-right:-25px;
+    overflow: hidden;
+    border-top-left-radius: 25px;
+}
+
+.zzangguDress2 .zzangguTshirt >div:nth-child(1) >div{
+   width: 30px;
+   height: 30px;
+   margin:5px 0px 0px -20px;
+   background-color: #3a9b38;
+   border-radius: 50px;
+   border:3px solid #000;
+}
+
+.zzangguDress2 .zzangguTshirt >div:nth-child(2){
+    z-index: 700;
+    width: 125px;
+    height: 95px;
+    background-color: #cbe2df;
+    display: flex;
+    margin-top:10px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    align-items: flex-end;
+}
+
+
+.zzangguDress2 .zzangguTshirt >div:nth-child(3){
+    z-index: 650;
+    width: 35px;
+    height: 60px;
+    background-color: #cbe2df;
+    border:3px solid #000;
+    transform: rotate(-20deg);
+    margin-left:-25px;
+    overflow: hidden;
+    border-top-right-radius: 25px;
+}
+
+.zzangguDress2 .zzangguTshirt >div:nth-child(3) >div{
+    width: 25px;
+    height: 25px;
+    margin:25px 0px 0px 25px;
+    background-color: #f9df1e;
+    border:3px solid #000;
+}
+
+.zzangguTshirtQuadrangle{
+    width: 32px;
+    height: 32px;
+    margin:10px 10px 0px 2px;
+    background-color: #f9df1e;
+    border:3px solid #000;
+    box-sizing: border-box;
+}
+
+.zzangguTshirtTriangle{
+    width: 30px;
+    height: 30px;
+    margin:40px 10px 0px 0px;
+    position: relative;
+    transform: rotate(20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zzangguTshirtTriangle div:nth-child(1){
+    position: absolute;
+    width: 2px;
+    height: 0px;
+    border-bottom:30px solid #000;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+}
+
+.zzangguTshirtTriangle div:nth-child(2){
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom:24px solid #dd242d;
+    border-left:11px solid transparent;
+    border-right:11px solid transparent;
+}
+
+.zzangguTshirtCircle{
+    width: 32px;
+    height: 32px;
+    margin:-15px 0px 0px -10px;
+    background-color: #3a9b38;
+    border-radius: 50px;
+    border:3px solid #000;
+}
+
+.zzangguDress2 .zzangguPants{
+    display: flex;
+    margin-top:-15px;
+    z-index: 500;
+    justify-content: center;
+}
+
+.zzangguDress2 .zzangguPants >div:nth-child(1){
+    display: flex;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width:55px;
+    height: 70px;
+    background-color: #cbe2df;
+    transform: rotate(2deg);
+    border:3px solid #000;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.zzangguDress2 .zzangguPants >div:nth-child(2){
+    width:10px;
+    height:20px;
+    background-color: #cbe2df;
+    z-index: 550;
+    border-bottom: 3px solid #000;
+    border-radius: 3px;
+    margin: 0px -5px 0px -5px;
+}
+
+.zzangguDress2 .zzangguPants >div:nth-child(3){
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width:55px;
+    height: 70px;
+    background-color: #cbe2df;
+    transform: rotate(-2deg);
+    border:3px solid #000;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.zzangguPantsTriangle{
+    width: 30px;
+    height: 30px;
+    margin:35px 0px 0px 0px;
+    position: relative;
+    transform: rotate(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zzangguPantsTriangle >div:nth-child(1){
+    position: absolute;
+    width: 2px;
+    height: 0px;
+    border-bottom:30px solid #000;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+}
+
+.zzangguPantsTriangle >div:nth-child(2){
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom:24px solid #dd242d;
+    border-left:11px solid transparent;
+    border-right:11px solid transparent;
+}
+
+.zzangguPantsCircle{
+    width: 30px;
+    height: 30px;
+    margin: -15px 0px 0px -10px;
+    background-color: #3a9b38;
+    border-radius: 50px;
+    border:3px solid #000;
+}
+
+.zzangguPantsQuadrangle{
+    width: 28px;
+    height: 28px;
+    margin:25px 0px 0px 15px;
+    background-color: #f9df1e;
+    border:3px solid #000;
+    box-sizing: border-box;
+    transform: rotate(10deg);
+}

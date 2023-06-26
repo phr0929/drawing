@@ -4,12 +4,14 @@ import './App.css';
 import Pomeranian from './Drawing/Pomeranian'
 import Hamburger from './Drawing/Hamburger' 
 import Cupcake from './Drawing/Cupcake';
+import Zzanggu from './Drawing/Zzanggu';
 const Main = (() => {
   
   const ddList = [
     {name:'포메라니안',dd:<Pomeranian/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/embed/yLQONpW?default-tab=html%2Cresult'},
     {name:'햄버거',dd:<Hamburger/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/pen/wvQGPEv'}, 
-    {name:'컵케이크',dd:<Cupcake/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/pen/mdQEjyp'}
+    {name:'컵케이크',dd:<Cupcake/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/pen/mdQEjyp'},
+    {name:'짱구',dd:<Zzanggu/>,codeLink:''}
   ]
 
   const [codeLink,setCodeLink] = useState('https://codepen.io/njurvxuu-the-reactor/embed/yLQONpW?default-tab=html%2Cresult')
