@@ -8,14 +8,14 @@ import Zzanggu from './Drawing/Zzanggu';
 const Main = (() => {
   
   const ddList = [
+    {name:'짱구',dd:<Zzanggu/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/pen/zYMNydB'},
     {name:'포메라니안',dd:<Pomeranian/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/embed/yLQONpW?default-tab=html%2Cresult'},
     {name:'햄버거',dd:<Hamburger/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/pen/wvQGPEv'}, 
     {name:'컵케이크',dd:<Cupcake/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/pen/mdQEjyp'},
-    {name:'짱구',dd:<Zzanggu/>,codeLink:'https://codepen.io/njurvxuu-the-reactor/pen/zYMNydB'}
   ]
 
-  const [codeLink,setCodeLink] = useState('https://codepen.io/njurvxuu-the-reactor/embed/yLQONpW?default-tab=html%2Cresult')
-  const [dd,setDd] = useState(<Pomeranian/>)
+  const [codeLink,setCodeLink] = useState('https://codepen.io/njurvxuu-the-reactor/pen/zYMNydB')
+  const [dd,setDd] = useState(<Zzanggu/>)
   const [ddIdx,setDdIdx] = useState(0)
 
   const handleDd = (dd,link,idx) => {
@@ -37,20 +37,17 @@ const Main = (() => {
         <div className='drawingList'>
             {ddList.map((val,idx)=>
                 <div key={idx} className={ddIdx===idx?'dd ddCkOn':'dd ddCkOff'} onClick={()=>handleDd(val.dd,val.codeLink,idx)}>
-                <div>{val.name}</div>
+                  <div>{val.name}</div>
                 </div>
             )}
             </div>
             <div className='imgBox'> 
-            <div className='codeBtn' onClick={()=>handleCode(codeLink)}>
-                CSS / HTML 코드
-            </div>
-
-            {dd}
-        </div> 
-
-
-    </div>
+              <div className='codeBtn' onClick={()=>handleCode(codeLink)}>
+                  CSS / HTML 코드
+              </div>
+              {dd}
+          </div>
+        </div>
   );
 })
 
