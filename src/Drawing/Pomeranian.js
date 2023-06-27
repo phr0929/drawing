@@ -36,15 +36,15 @@ const Pomeranian =  (()=> {
       
         <div className='pomeFace'>
           <div className='pomeEye'>
-            <div className='eye'>
-              <div className='pupil'/>
+            <div className='peye'>
+              <div className='ppupil'/>
             </div>
-            <div className='eye'>
-              <div className='pupil'/>
+            <div className='peye'>
+              <div className='ppupil'/>
             </div>
           </div>
           <div className='pomeFaceBottom'>
-            <div className='cheek'>
+            <div className='pcheek'>
               <div className='left'/>
             </div>
             <div className='faceBottomCenter'>
@@ -53,7 +53,7 @@ const Pomeranian =  (()=> {
               <div className='lips'/>
               <div className='mouth'/>
             </div>
-            <div className='cheek'>
+            <div className='pcheek'>
               <div className='right'/>
             </div>
           </div>

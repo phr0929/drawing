@@ -278,7 +278,7 @@
     align-items: center;
 }
 
-.pomeEye .eye{
+.pomeEye .peye{
     width: 15px;
     background-color: #969696;
     display: flex;
@@ -293,7 +293,7 @@
     animation-iteration-count: infinite;
 }
 
-.pomeEye .pupil{
+.pomeEye .ppupil{
     width: 5px;
     background-color: #fff;
     margin:2px;
@@ -332,14 +332,14 @@
     margin-top:-10px;
 }
 
-.pomeFaceBottom .cheek{
+.pomeFaceBottom .pcheek{
     width: 30px;
     height: 30px;
     background-color: #ffd8d8;
     border-radius: 100px;
 }
 
-.pomeFaceBottom .cheek .left{
+.pomeFaceBottom .pcheek .left{
     width: 10px;
     height: 10px;
     margin:13px 14px 5px 5px;
@@ -347,7 +347,7 @@
     border-radius: 100px;
 }
 
-.pomeFaceBottom .cheek .right{
+.pomeFaceBottom .pcheek .right{
     width: 10px;
     height: 10px;
     margin:13px 5px 5px 14px;

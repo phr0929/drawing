@@ -6,84 +6,73 @@ const Zzanggu =  (()=> {
   const [dress,setDress] = useState(0)
 
   return (
+    
     <div className="zzangguDrawing">
-      <div style={{display:'flex',marginBottom:40}}>
-
-        <div onClick={()=>setDress(0)} style={{width:35,height:35,display:'flex',flexDirection:'column',border:dress===0?'3px solid #000':'3px solid #ccc',borderRadius:5,alignItems:'center',justifyContent:'center',margin:5}}>
-          <div style={{display:'flex',flex:2,width:'100%',backgroundColor:'#c91f2b'}}>
+      <div className='dressSelectBar'>
+        <span className={dress===0?'dressSelectOn':'dressSelectOff'} onClick={()=>setDress(0)}>
+          <div className='dress1Top'></div>
+          <div className='dress1Bottom'></div>
+        </span>
+        <span className={dress===1?'dressSelectOn':'dressSelectOff'} onClick={()=>setDress(1)}>
+          <div className='dress2Top'>
+            <div></div>
+            <div></div> 
           </div>
-          <div style={{display:'flex',flex:1,width:'100%',backgroundColor:'#f7f06d',borderTop:'2px solid #000'}}></div>
-        </div>
-
-        <div onClick={()=>setDress(1)} style={{fontSize:10,width:35,height:35,display:'flex',flexDirection:'column',border:dress===1?'3px solid #000':'3px solid #ccc',borderRadius:5,alignItems:'center',justifyContent:'center',margin:5}}>
-          <div style={{display:'flex',flex:1,width:'100%',backgroundColor:'#cbe2df',justifyContent:'center',alignItems:'center'}}>
-            <div style={{width:10,height:10,backgroundColor:'#f9df1e',margin:2,border:'2px solid #000'}}></div>
-            <div style={{width:10,height:10,borderRadius:10,backgroundColor:'#3a9b38',margin:2,border:'2px solid #000'}}></div> 
-          </div>
-        </div>
-
-        <div onClick={()=>setDress(2)} style={{width:35,height:35,display:'flex',flexDirection:'column',border:dress===2?'3px solid #000':'3px solid #ccc',borderRadius:5,alignItems:'center',justifyContent:'center',margin:5}}>
-            <div style={{display:'flex',flexDirection:'column',flex:1,width:'100%',backgroundColor:'#1a3a82',justifyContent:'center'}}>
-              <div style={{display:'flex',width:'100%',justifyContent:'center'}}>
-                <div style={{width:5,height:5,borderRadius:10,backgroundColor:'#f7f06d',border:'2px solid #000',margin:2}}></div>
-                <div style={{width:5,height:5,borderRadius:10,backgroundColor:'#f7f06d',border:'2px solid #000',margin:2}}></div>
+        </span>
+        <span className={dress===2?'dressSelectOn':'dressSelectOff'} onClick={()=>setDress(2)}>
+            <div className='dress3Top'>
+              <div >
+                <div className='dress3Button'></div>
+                <div className='dress3Button'></div>
               </div>
-              <div style={{display:'flex',width:'100%',justifyContent:'center'}}>
-                <div style={{width:5,height:5,borderRadius:10,backgroundColor:'#f7f06d',border:'2px solid #000',margin:2}}></div>
-                <div style={{width:5,height:5,borderRadius:10,backgroundColor:'#f7f06d',border:'2px solid #000',margin:2}}></div>
+              <div  >
+                <div className='dress3Button'></div>
+                <div className='dress3Button'></div>
               </div>
             </div>
-        </div>
-
-        <div onClick={()=>setDress(3)} style={{width:35,height:35,display:'flex',flexDirection:'column',border:dress===3?'3px solid #000':'3px solid #ccc',borderRadius:5,alignItems:'center',justifyContent:'center',margin:5}}>
-          <div style={{display:'flex',flex:2,width:'100%',backgroundColor:'#9ac1d1'}}>
+        </span>
+        <span className={dress===3?'dressSelectOn':'dressSelectOff'} onClick={()=>setDress(3)}>
+          <div className='dress4Top'>
           </div>
-          <div style={{display:'flex',flex:1,width:'100%',backgroundColor:'#1a3a82',borderTop:'2px solid #000'}}></div>
-        </div>
+          <div className='dress4Bottom'></div>
+        </span>
       </div>
-
       <div className='zzanggu'>
-        <div className='zzangguFace'>
+        <div className='face'>
           {/* 머리 */}
-          <div className='zzangguHair'> 
+          <div className='hair'> 
           </div>
-          
           {/* 이마 */}
-          <div className='zzangguForehead'>
+          <div className='forehead'>
             <div></div>
             <div></div>
           </div>
-          
           {/* 볼,귀 */}
-          <div className='zzangguFaceBottom'>
-            <div className='zzangguCheek'>
-              <div className='zzangguLeftCheek'>
-                <div className='zzangguPinkCheek'></div>
-                <div className='zzangguPinkCheek'></div>
-                <div className='zzangguPinkCheek'></div>
-                <div className='zzangguPinkCheek'></div>
+          <div className='faceBottom'>
+            <div className='cheek'>
+              <div className='leftCheek'>
+                <div className='pinkCheek'></div>
+                <div className='pinkCheek'></div>
+                <div className='pinkCheek'></div>
+                <div className='pinkCheek'></div>
               </div>
-              
-              <div className='zzangguRightCheek'>
-                <div className='zzangguPinkCheek'></div>
-                <div className='zzangguPinkCheek'></div>
-                <div className='zzangguPinkCheek'></div>
-                <div className='zzangguPinkCheek'></div>
+              <div className='rightCheek'>
+                <div className='pinkCheek'></div>
+                <div className='pinkCheek'></div>
+                <div className='pinkCheek'></div>
+                <div className='pinkCheek'></div>
               </div>
             </div>
-            <div className='zzangguEar'></div>
+            <div className='ear'></div>
           </div>
-
           {/* 볼,귀 테두리*/}
-          <div className='zzangguFaceBottomBorder'>
-            <div className='zzangguCheekBorder'></div>
-            <div className='zzangguEarBorder'></div>
+          <div className='faceBottomBorder'>
+            <div className='cheekBorder'></div>
+            <div className='earBorder'></div>
           </div>
-
-          <div className='zzangguFaceDetail'>
-          
+          <div className='faceDetail'>
             {/* 눈썹 */}
-            <div className='zzangguEyebrow'>
+            <div className='eyebrow'>
               <div>
                 <span className='eyebrowLeft'></span> 
                 <span className='eyebrowRight'></span>
@@ -94,7 +83,7 @@ const Zzanggu =  (()=> {
               </div>
             </div>
             {/* 눈썹 테두리 */}
-            <div className='zzangguEyebrowBorder'>
+            <div className='eyebrowBorder'>
               <div>
                 <span className='eyebrowLeftBorder'></span> 
                 <span className='eyebrowRightBorder'></span>
@@ -104,290 +93,224 @@ const Zzanggu =  (()=> {
                 <span className='eyebrowRightBorder'></span>
               </div>
             </div>
-          
             {/* 눈 */}
-            <div className='zzangguEye'>
-              <div className='zzangguEyeLeft'>
-                <div className='zzangguEyelashes'>
+            <div className='eye'>
+              <div className='eyeIn'>
+                <div className='eyelashes'>
                   <div></div>
                 </div>
-                <div className='zzangguEyelashesBottom'></div>  
-                <div className='zzangguEyePupil pupilLeft'>
-                  <div className='zzangguEyePupilIn'></div>
+                <div className='eyelashesBottom'></div>  
+                <div className='eyePupil pupilLeft'>
+                  <div className='eyePupilIn'></div>
                 </div>
               </div>
-
-              <div className='zzangguEyeLeft'>
-                <div className='zzangguEyelashes'>
+              <div className='eyeIn'>
+                <div className='eyelashes'>
                   <div></div>
                 </div>
-                <div className='zzangguEyelashesBottom'></div>  
-                <div className='zzangguEyePupil'>
-                  <div className='zzangguEyePupilIn'></div>
+                <div className='eyelashesBottom'></div>  
+                <div className='eyePupil'>
+                  <div className='eyePupilIn'></div>
                 </div>
               </div>
-
             </div> 
-
-            <div className='zzangguMouse'>
-              <div className='zzangguMouseTop'>
+            <div className='mouse'>
+              <div className='mouseTop'>
                 <div></div>
               </div>
-              <div className='zzangguMouseBottom'></div>
+              <div className='mouseBottom'></div>
             </div>
           </div>
-
         </div>
-
- 
-
         {/* 짱구몸 */}
-        <div className='zzangguBody'> 
-
+        <div className='body'>
           {dress===0?
-          <div className='zzangguDress zzangguDress1'>
-            <div className='zzangguTshirt'>
-              <div></div>
-              <div>
-                <div className='zzangguTshirtBorder'></div>
-                <div className='zzangguTshirtCenter'></div>
-                <div className='zzangguTshirtBorder'></div>
+          <div className='dress dress1'>
+            <div className='tshirt'>
+              <div className='tshirtArmLeft tshirtColor'></div>
+              <div className='tshirtTorso'>
+                <div className='tshirtBorder'></div>
+                <div className='tshirtCenter tshirtColor'></div>
+                <div className='tshirtBorder'></div>
               </div>
-              <div></div>
+              <div className='tshirtArmRight tshirtColor'></div>
             </div>
- 
-            <div className='zzangguPants'>
-              <div></div>
-              <div></div>
-              <div></div>
+            <div className='pants'>
+              <div className='pantsLegsLeft pantsColor'></div>
+              <div className='pantsLegsCenter pantsColor'></div>
+              <div className='pantsLegsRight pantsColor'></div>
             </div>
-            
-            <div className='zzangguShoes'>
-              <span>
-                <div className='zzangguSocksLeft'></div>
-                <div className='zzangguShoesLeft'>
-                </div>
-              </span>
-              <span>
-                <div className='zzangguSocksRight'></div>
-                <div className='zzangguShoesRight'>
-                </div>
-              </span>
+            <div className='shoes'>
+              <div className='shoesNull'></div>
+              <div className='shoesLeft'>
+                <div></div>
+                <div className='shoesColor'></div>
+              </div>
+              <div className='shoesNull'></div>
+              <div className='shoesRight'>
+                <div></div>
+                <div className='shoesColor'></div>
+              </div>
+              <div className='shoesNull'></div>
             </div>
-          
           </div>
           :dress===1?
-          <div className='zzangguDress zzangguDress2'>
-            <div className='zzangguTshirt'>
-              <div>
-                <div></div>
+          <div className='dress dress2'>
+            <div className='tshirt'>
+              <div className='tshirtArmLeft tshirtColor'>
+                <div className='tshirtArmCircle'></div>
               </div>
-              <div>
-                <div className='zzangguTshirtBorder'></div>
-                <div className='zzangguTshirtCenter'>
-                  <div className='zzangguTshirtQuadrangle'></div>
-               
-                  <div className='zzangguTshirtTriangle'>
+              <div className='tshirtTorso'>
+                <div className='tshirtBorder'></div>
+                <div className='tshirtCenter tshirtColor'>
+                  <div className='tshirtQuadrangle'></div>
+                  <div className='tshirtTriangle'>
                     <div></div>
                     <div></div>
                   </div>
-                  <div className='zzangguTshirtCircle'></div>
+                  <div className='tshirtCircle'></div>
                 </div>
-                <div className='zzangguTshirtBorder'></div>
+                <div className='tshirtBorder'></div>
               </div>
-              <div>
-                 <div></div>
+              <div className='tshirtArmRight tshirtColor'>
+                 <div className='tshirtArmQuadrangle'></div>
               </div>
             </div>
-
-            <div className='zzangguPants'>
-              <div>
-                <div className='zzangguPantsTriangle'>
+            <div className='pants'>
+              <div className='pantsLegsLeft pantsColor'>
+                <div className='pantsTriangle'>
                   <div></div>
                   <div></div>
                 </div>
-                <div className='zzangguPantsCircle'></div>
-            
+                <div className='pantsCircle'></div>
               </div>
-              <div></div>
-              <div>
-                <div className='zzangguPantsQuadrangle'></div>
+              <div className='pantsLegsCenter pantsColor'></div>
+              <div className='pantsLegsRight pantsColor'>
+                <div className='pantsQuadrangle'></div>
               </div>
             </div>
           </div>
           :
           dress===2?
-          <div className='zzangguDress zzangguDress3'>
-            <div className='zzangguTshirt3' style={{display:'flex',zIndex:600,marginTop:-11}}>
-              <div style={{zIndex:650,width:25,height:70,marginTop:10,backgroundColor:"#1a3a82",border:'3px solid #000',transform:'rotate(15deg)',marginRight:-20,overflow:'hidden',borderTopLeftRadius:25}}></div>
-              <div style={{zIndex:700,width:125,height:100,backgroundColor:'#1a3a82',display:'flex',marginTop:10,
-                 borderTopRightRadius:50,borderTopLeftRadius:50,alignItems:'flex-end'}}>
-                <div style={{height:70,width:3,backgroundColor:'#000'}}></div>
-                <div style={{display:'flex',flexDirection:'column',flex:1,justifyContent:'flex-start',alignItems:'center',height:'100%',borderBottom:'3px solid #000',}}>
-                  <div style={{display:'flex',}}>
-                    <div style={{width:30,height:30,borderBottomRightRadius:50,borderBottomLeftRadius:50,backgroundColor:'#fff',border:'3px solid #000',marginRight:-28,zIndex:650}}></div>
-                    <div style={{width:45,height:40,borderBottomRightRadius:50,borderBottomLeftRadius:50,backgroundColor:'#fff',border:'3px solid #000',zIndex:600}}></div>
-                    <div style={{width:30,height:30,borderBottomRightRadius:50,borderBottomLeftRadius:50,backgroundColor:'#fff',border:'3px solid #000',marginLeft:-28,zIndex:650}}></div>
+          <div className='dress dress3'>
+            <div className='tshirt'>
+              <div className='tshirtArmLeft tshirtColor'></div>
+              <div className='tshirtTorso'>
+                <div className='tshirtBorder'></div>
+                <div className='tshirtCenterColumn tshirtColor'>
+                  <div className='tshirtKara'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                   </div>
-                  <div style={{display:'flex'}}>
-                    <div style={{width:7,height:7,borderRadius:10,backgroundColor:'#f7f06d',border:'3px solid #000',margin:'4px 10px 4px 10px'}}></div>
-                    <div style={{width:7,height:7,borderRadius:10,backgroundColor:'#f7f06d',border:'3px solid #000',margin:'4px 10px 4px 10px'}}></div>
+                  <div className='tshirtButton'>
+                    <div></div>
+                    <div></div>
                   </div>
-                  <div style={{display:'flex'}}>
-                    <div style={{width:7,height:7,borderRadius:10,backgroundColor:'#f7f06d',border:'3px solid #000',margin:'4px 10px 4px 10px'}}></div>
-                    <div style={{width:7,height:7,borderRadius:10,backgroundColor:'#f7f06d',border:'3px solid #000',margin:'4px 10px 4px 10px'}}></div>
+                  <div className='tshirtButton'>
+                    <div></div>
+                    <div></div>
                   </div>
-                  
                 </div>
-                <div style={{height:70,width:3,backgroundColor:'#000'}}></div>
+                <div className='tshirtBorder'></div>
               </div>
-              <div style={{zIndex:650,width:25,height:70,marginTop:10,backgroundColor:"#1a3a82",border:'3px solid #000',transform:'rotate(-10deg)',marginLeft:-20,overflow:'hidden',
-              borderTopRightRadius:25}}></div>
+              <div className='tshirtArmRight tshirtColor'></div>
             </div>
-
-            <div className='zzangguPants3' style={{display:'flex',marginTop:-5,zIndex:500,justifyContent:'center'}}>
-              <div style={{borderBottomLeftRadius:5,borderBottomRightRadius:5,width:55,height:30,backgroundColor:'#1a3a82',transform:'rotate(5deg)',border:'3px solid #000',zIndex:500}}></div>
-              <div style={{width:10,height:20,backgroundColor:'#1a3a82',zIndex:550,borderBottom:'3px solid #000',borderRadius:3,margin:'0px -5px 0px -5px'}}></div>
-              <div style={{borderBottomLeftRadius:5,borderBottomRightRadius:5,width:55,height:30,backgroundColor:'#1a3a82',transform:'rotate(-5deg)',border:'3px solid #000',zIndex:500}}></div>
+            <div className='pants'>
+              <div className='pantsLegsLeft pantsColor'></div>
+              <div className='pantsLegsCenter pantsColor'></div>
+              <div className='pantsLegsRight pantsColor'></div>
             </div>
-            
-            <div className='zzangguShoes'>
-              <span>
-                <div className='zzangguSocksLeft'></div>
-                <div className='zzangguShoesLeft'>
-                </div>
-              </span>
-              <span>
-                <div className='zzangguSocksRight'></div>
-                <div className='zzangguShoesRight'>
-                </div>
-              </span>
+            <div className='shoes'>
+              <div className='shoesNull'></div>
+              <div className='shoesLeft'>
+                <div></div>
+                <div className='shoesColor'></div>
+              </div>
+              <div className='shoesNull'></div>
+              <div className='shoesRight'>
+                <div></div>
+                <div className='shoesColor'></div>
+              </div>
+              <div className='shoesNull'></div>
             </div>
-          
           </div>
           :
-          <div className='zzangguDress zzangguDress4'>
-            <div className='zzangguTshirt1' style={{display:'flex',zIndex:600,marginTop:-11}}>
-              <div style={{zIndex:650,width:25,height:70,marginTop:10,backgroundColor:"#9ac1d1",border:'3px solid #000',transform:'rotate(15deg)',marginRight:-20,overflow:'hidden',borderTopLeftRadius:25}}></div>
-              <div style={{zIndex:700,width:125,height:100,backgroundColor:'#9ac1d1',display:'flex',marginTop:10,
-            borderTopRightRadius:50,borderTopLeftRadius:50,alignItems:'flex-end'}}>
-                <div style={{height:70,width:3,backgroundColor:'#000'}}></div>
-                <div style={{display:'flex',flexDirection:'column',flex:1,justifyContent:'flex-start',alignItems:'center',height:'100%',borderBottom:'3px solid #000',}}>
-                  <div style={{width:30,height:20,borderBottomRightRadius:50,borderBottomLeftRadius:50,backgroundColor:'#f5d5c2',border:'3px solid #000'}}></div>
-                  <div style={{display:'flex'}}>
-                    <div style={{width:3,height:10,backgroundColor:'#000',margin:3,borderRadius:10,transform:'rotate(20deg)'}}></div>
-                    <div style={{width:3,height:10,backgroundColor:'#000',margin:5,borderRadius:10}}></div>
-                    <div style={{width:3,height:10,backgroundColor:'#000',margin:3,borderRadius:10,transform:'rotate(-20deg)'}}></div>
+          <div className='dress dress4'>
+            <div className='tshirt'> 
+              <div className='tshirtArmLeft tshirtColor'></div>
+              <div className='tshirtTorso'>
+                <div className='tshirtBorder'></div>
+                <div className='tshirtCenterColumn tshirtColor'>
+                  <div className='tshirtNeck'></div>
+                  <div className='tshirtCrease'> 
+                      <div></div>
+                      <div></div>
+                      <div></div> 
                   </div>
                 </div>
-                <div style={{height:70,width:3,backgroundColor:'#000'}}></div>
+                <div className='tshirtBorder'></div>
+              </div> 
+              <div className='tshirtArmRight tshirtColor'></div>
+            </div>
+            <div className='pants'>
+              <div className='pantsLegsLeft pantsColor'></div>
+              <div className='pantsLegsCenter pantsColor'></div>
+              <div className='pantsLegsRight pantsColor'></div>
+            </div>
+            <div className='shoes'>
+              <div className='shoesNull'></div>
+              <div className='shoesLeft'>
+                <div></div>
+                <div className='shoesColor'></div>
               </div>
-              <div style={{zIndex:650,width:25,height:70,marginTop:10,backgroundColor:"#9ac1d1",border:'3px solid #000',transform:'rotate(-10deg)',marginLeft:-20,overflow:'hidden',
-              borderTopRightRadius:25}}></div>
+              <div className='shoesNull'></div>
+              <div className='shoesRight'>
+                <div></div>
+                <div className='shoesColor'></div>
+              </div>
+              <div className='shoesNull'></div>
             </div>
-
-            <div className='zzangguPants4' style={{display:'flex',marginTop:-5,zIndex:500,justifyContent:'center'}}>
-              <div style={{borderBottomLeftRadius:5,borderBottomRightRadius:5,width:55,height:30,backgroundColor:'#1a3a82',transform:'rotate(5deg)',border:'3px solid #000',zIndex:500}}></div>
-              <div style={{width:10,height:20,backgroundColor:'#1a3a82',zIndex:550,borderBottom:'3px solid #000',borderRadius:3,margin:'0px -5px 0px -5px'}}></div>
-              <div style={{borderBottomLeftRadius:5,borderBottomRightRadius:5,width:55,height:30,backgroundColor:'#1a3a82',transform:'rotate(-5deg)',border:'3px solid #000',zIndex:500}}></div>
-            </div>
-            
-            <div className='zzangguShoes'>
-              <span>
-                <div className='zzangguSocksLeft'></div>
-                <div className='zzangguShoesLeft'>
-                </div>
-              </span>
-              <span>
-                <div className='zzangguSocksRight'></div>
-                <div className='zzangguShoesRight'>
-                </div>
-              </span>
-            </div>
-          
           </div>}
 
-
-
-          <div className='zzangguNudeBody'>
-            {/* 왼팔 */}
-            <div className='zzangguArm zzangguArmLeft'>
-              <div></div>
-              <div className='zzangguFingerLeft'>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-            {/* 왼팔 테두리 */}
-            <div className='zzangguArmBorder zzangguArmLeftBorder'>
-              <div></div> 
-              <div className='zzangguFingerLeftBorder'>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-
-            <div className='zzangguBodyCenter'>
-              <div className='zzangguTorso'>
-                <div></div>
-                <span></span>
-                <div></div>
-              </div>
-              <div className='zzangguDiaper'></div>
-              {/* 다리 */}
-              <div className='zzangguLegs'>
-                <div className='zzangguLegsLeft'>
-                  <div></div>
-                  <div className='zzangguFootLeft'></div>
-                </div>
-                <div className='zzangguLegsRight'>
-                  <div></div>
-                  <div className='zzangguFootRight'></div>
-                </div>
-              </div>
-              {/* 다리 테두리 */}
-              <div className='zzangguLegsBorder'>
-                <div className='zzangguLegsLeftBorder'>
-                  <div></div>
-                  <div className='zzangguFootLeftBorder'></div>
-                </div>
-
-
-                <div className='zzangguLegsRightBorder'>
-                  <div></div>
-                  <div className='zzangguFootRightBorder'></div>
-                </div>
-
-
-              </div>
-            </div>
-
+          <div className='nudeBody'>
             {/* 오른팔 */}
-            <div className='zzangguArm zzangguArmRight'>
+            <div className='arm armLeft'>
               <div></div>
-              <div className='zzangguFingerRight'> 
-              </div>
+              <div className='fingerLeft'></div>
+              <div className='fingerLeftBorder'></div>
             </div>
-            
-            {/* 오른팔 테두리 */}
-            <div className='zzangguArmBorder zzangguArmRightBorder'>
-              <div></div>
-              <div className='zzangguFingerRightBorder'>
+            <div className='bodyCenter'>
+              {/* 몸통 */}
+              <div className='torso'>
+                <div></div>
                 <span></span>
+                <div></div>
+              </div>
+              <div className='diaper'></div>
+              {/* 다리 */}
+              <div className='legs'>
+                <div className='legsLeft'>
+                  <div></div>
+                  <div className='footLeft'></div>
+                  <div className='footLeftBorder'></div>
+                </div>
+                <div className='legsRight'>
+                  <div></div>
+                  <div className='footRight'></div>
+                  <div className='footRightBorder'></div>
+                </div>
               </div>
             </div>
-
+            {/* 오른팔 */}
+            <div className='arm armRight'>
+              <div></div>
+              <div className='fingerRight'></div>
+              <div className='fingerRightBorder'></div>
+            </div>
           </div>
-
         </div>
-      </div> 
-
+      </div>
     </div>
    );
 })
