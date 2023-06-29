@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import './building.css'; 
-import imgBuilding from '../resource/building.jpg'
+import './building.css';  
 
 const Building =  (()=> {
 

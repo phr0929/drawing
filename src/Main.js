@@ -5,6 +5,7 @@ import Pomeranian from './Drawing/Pomeranian'
 import Hamburger from './Drawing/Hamburger' 
 import Cupcake from './Drawing/Cupcake';
 import Zzanggu from './Drawing/Zzanggu';
+
 const Main = (() => {
   
   const ddList = [
@@ -30,9 +31,8 @@ const Main = (() => {
 
 
   return (
-    <div className="App">
-
- 
+    <div className="App" style={{display:'flex',alignItems:'center'}}>
+  
  
         <div className='drawingList'>
             {ddList.map((val,idx)=>
@@ -47,7 +47,7 @@ const Main = (() => {
               </div>
               {dd}
           </div>
-        </div>
+    </div>
   );
 })
 
