@@ -6,6 +6,8 @@ import Pomeranian from './Drawing/Pomeranian'
 import Hamburger from './Drawing/Hamburger' 
 import Cupcake from './Drawing/Cupcake';
 import Zzanggu from './Drawing/Zzanggu';
+import Teemo from './Drawing/Teemo';
+import Pikachu from './Drawing/Pikachu';
 const App = (() => {
   const setOneVh = () => {
     const vh = window.innerHeight * 0.01;
@@ -56,6 +58,8 @@ const App = (() => {
               <Route path="/hamburger" element={<Hamburger/>} /> 
               <Route path="/cupcake" element={<Cupcake/>} /> 
               <Route path='/zzanggu' element={<Zzanggu/>}/>
+              <Route path='/teemo' element={<Teemo/>}/>
+              <Route path='/pikachu' element={<Pikachu/>}/>
             </Routes>
         </HashRouter>
       </React.StrictMode>

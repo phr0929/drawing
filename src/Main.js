@@ -5,6 +5,8 @@ import Pomeranian from './Drawing/Pomeranian'
 import Hamburger from './Drawing/Hamburger' 
 import Cupcake from './Drawing/Cupcake';
 import Zzanggu from './Drawing/Zzanggu';
+import Teemo from './Drawing/Teemo';
+import Pikachu from './Drawing/Pikachu';
 
 const Main = (() => {
   
@@ -33,20 +35,21 @@ const Main = (() => {
   return (
     <div className="App" style={{display:'flex',alignItems:'center'}}>
   
+        <Pikachu/>
  
-        <div className='drawingList'>
-            {ddList.map((val,idx)=>
-                <div key={idx} className={ddIdx===idx?'dd ddCkOn':'dd ddCkOff'} onClick={()=>handleDd(val.dd,val.codeLink,idx)}>
-                  <div>{val.name}</div>
-                </div>
-            )}
-            </div>
-            <div className='imgBox'> 
-              <div className='codeBtn' onClick={()=>handleCode(codeLink)}>
-                  CSS / HTML 코드
+        {/* <div className='drawingList'>
+          {ddList.map((val,idx)=>
+              <div key={idx} className={ddIdx===idx?'dd ddCkOn':'dd ddCkOff'} onClick={()=>handleDd(val.dd,val.codeLink,idx)}>
+                <div>{val.name}</div>
               </div>
-              {dd}
+          )}
           </div>
+          <div className='imgBox'> 
+            <div className='codeBtn' onClick={()=>handleCode(codeLink)}>
+                CSS / HTML 코드
+            </div>
+            {dd}
+        </div> */}
     </div>
   );
 })

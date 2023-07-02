@@ -1,0 +1,117 @@
+.pikachuDrawing {
+    width: 100vw;
+    height: 100vh;
+    /* height: calc(var(--vh, 1vh) * 100); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pikachu{
+    /* position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.monsterBallLayout{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: ball 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball{
+    0%{
+        transform: rotate(0deg); 
+    }30%{
+        transform: rotate(5deg);
+        margin-bottom:5px;
+    }60%{
+        transform: rotate(5deg);
+    }100%{
+        transform: rotate(0deg);
+    }
+}
+
+.pikachuLeftEar{
+    width: 25px;
+    height: 100px;
+    background-color: #ffc936;
+    border-radius: 50px / 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: rotate(-30deg); 
+}
+
+.pikachuRightEar{
+    width: 25px;
+    height: 100px;
+    background-color: #ffc936;
+    border-radius: 50px / 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: rotate(100deg);
+    margin:0px -20px -50px 120px; 
+}
+
+.pikachuArm{
+    display: flex;
+    z-index: 80;
+}
+
+.picachuArmLeft{
+    width: 120px;
+    height: 35px;
+    margin-top: -145px; 
+    background-color: #ffc936;
+    border-radius: 30% / 100%;
+    animation: armLeft 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.picachuArmRight{
+    width: 120px;
+    height: 35px;
+    margin-top: -145px; 
+    background-color: #ffc936;
+    border-radius: 30% / 100%;
+    animation: armRight 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes armLeft{
+    0%{
+        transform: rotate(40deg);
+    }50%{
+        transform: rotate(30deg);
+    }100%{
+        transform: rotate(40deg);
+    }
+}
+
+@keyframes armRight{
+    0%{
+        transform: rotate(-40deg);
+    }50%{
+        transform: rotate(-30deg);
+    }100%{
+        transform: rotate(-40deg);
+    }
+}
