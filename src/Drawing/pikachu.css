@@ -1,7 +1,6 @@
-.pikachuDrawing {
-    width: 100vw;
-    height: 100vh;
-    /* height: calc(var(--vh, 1vh) * 100); */
+.pikachuDrawing{
+    width:100vw;
+    height:100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,61 +9,228 @@
 }
 
 .pikachu{
-    /* position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center; */
-}
-
-.monsterBallLayout{
-    width: 100px;
-    height: 100px;
-    background-color: #eee;
-    border-radius: 100px;
-    overflow: hidden;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-
-    animation: ball 1s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    margin-top:-73px;
 }
 
-@keyframes ball{
-    0%{
-        transform: rotate(0deg); 
-    }30%{
-        transform: rotate(5deg);
-        margin-bottom:5px;
-    }60%{
-        transform: rotate(5deg);
-    }100%{
-        transform: rotate(0deg);
-    }
+.pikachuEar{
+    display: flex;
+    align-items: flex-end;
+    z-index: 50;
 }
 
-.pikachuLeftEar{
+.pikachuEar >div{
     width: 25px;
     height: 100px;
     background-color: #ffc936;
     border-radius: 50px / 200px;
     box-sizing: border-box;
     overflow: hidden;
-    transform: rotate(-30deg); 
 }
 
-.pikachuRightEar{
-    width: 25px;
-    height: 100px;
-    background-color: #ffc936;
-    border-radius: 50px / 200px;
-    box-sizing: border-box;
-    overflow: hidden;
+.pikachuEarLeft{
+    transform: rotate(-30deg);
+}
+
+.pikachuEarLeft >div{
+    width: 40px;
+    height: 30px;
+    background-color: #000;
+    transform: rotate(-20deg);
+    margin-left:-6px;
+}
+
+.pikachuEarRight{
     transform: rotate(100deg);
-    margin:0px -20px -50px 120px; 
+    margin:0px -20px -50px 120px;
+}
+
+.pikachuEarRight >div{
+    width: 40px;
+    height: 30px;
+    background-color: #000;
+    transform: rotate(20deg);
+    margin-left:3px;
+}
+
+.pikachuForehead{
+    width: 100px;
+    height: 0px;
+    z-index: 60;
+    border-bottom: 90px solid #ffc936;
+    border-left:22px solid transparent;
+    border-right:22px solid transparent;
+    border-radius: 50% / 50%;
+    margin-top:-30px;
+}
+
+.pikachuFace{
+    width: 140px;
+    height: 100px;
+    z-index: 70;
+    background-color: #ffc936;
+    margin-top:-58px;
+    border-radius: 50% / 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pikachuEye{
+    display: flex;
+    padding-top:10px;
+}
+
+.pikachuEye >div{
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50px;
+    display: flex;
+}
+
+.pikachuEyeLeft{
+    justify-content: flex-end;
+}
+
+.pikachuEyeRight{
+    margin-left:45px;
+}
+
+.pikachuPupil{
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin:3px;
+}
+
+.pikachuFaceBottom{
+    display: flex;
+    flex:1;
+    align-items: center;
+    width: 100%;
+    margin-top:-30px;
+}
+
+.pikachuCheek{
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    background-color: #e51f2d;
+
+    margin:-7px;
+    border-radius: 100px;
+}
+
+.pikachuNoseMouth{
+    display: flex;
+    width: 100%;
+    margin-top:-35px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pikachuNose{
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.pikachuMouthBorder{
+    width: 2px;
+    height: 0px;
+    border-top:25px solid #000;
+    border-left:12px solid transparent;
+    border-right:12px solid transparent;
+    border-radius: 5px;
+}
+
+.pikachuMouth{
+    width: 0px;
+    height: 0px;
+    border-top:23px solid #e51f2d;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-radius: 5px;
+    margin-top:-25px;
+}
+
+.pikachuMouthLine{
+    display: flex;
+    margin-top:-25px;
+}
+
+.pikachuMouthLine div{
+    width: 12px;
+    height: 9px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.pikachuMouthLine div:nth-child(2){
+    margin-left:-2px;
+}
+
+.pikachuMouthLine2{
+    display: flex;
+    margin-top: -11px;
+}
+
+.pikachuMouthLine2 div{
+    width: 12px;
+    height: 9px;
+    background-color: #ffc936;
+    border-radius: 10px;
+}
+
+.pikachuMouthLine2 div:nth-child(2){
+    margin-left:-2px;
+}
+
+.pikachuMouthLine3{
+    width: 50px;
+    background-color: #ffc936;
+    height: 5px;
+    margin-top:-7px;
+}
+
+.pikachuShadow{
+    min-width: 12px;
+    height: 0px;
+    border-top: 5px solid #cf9035;
+    border-left:8px solid transparent;
+    border-right: 8px solid transparent;
+    border-radius: 20px;
+    margin-top:-20px;
+    z-index: 90;
+}
+
+.pikachuNeck{
+    width: 100px;
+    height: 20px;
+    border-bottom:90px solid #ffc936;
+    border-left:27px solid transparent;
+    border-right:27px solid transparent;
+    margin-top:-20px;
+    z-index: 80;
+    border-radius: 50% / 50%;
+}
+
+.pikachuBody{
+    width: 140px;
+    height: 130px;
+    border-radius: 40% / 70%;
+    background-color: #ffc936;
+    margin-top:-80px;
+    z-index: 80;
 }
 
 .pikachuArm{
@@ -72,26 +238,24 @@
     z-index: 80;
 }
 
-.picachuArmLeft{
+.pikachuArm >div{
     width: 120px;
     height: 35px;
-    margin-top: -145px; 
     background-color: #ffc936;
+    margin-top: -145px;
     border-radius: 30% / 100%;
+}
+
+.pikachuArmLeft{
+    transform: rotate(40deg);
     animation: armLeft 1s;
-    animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
 
-.picachuArmRight{
-    width: 120px;
-    height: 35px;
-    margin-top: -145px; 
-    background-color: #ffc936;
-    border-radius: 30% / 100%;
+.pikachuArmRight{
+    transform: rotate(-40deg);
     animation: armRight 1s;
-    animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
@@ -114,4 +278,171 @@
     }100%{
         transform: rotate(-40deg);
     }
+}
+
+
+.pikachuFoot{
+    display: flex;
+    margin-top:-5px;
+    z-index: 80;
+}
+
+.pikachuFoot >div{
+    width: 32px;
+    height: 15px;
+    background-color: #ffc936;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pikachuFootLeft{
+    border-top-left-radius: 50px;
+}
+
+.pikachuFootRight{
+    border-top-right-radius: 50px;
+    margin-left:10px;
+}
+
+.pikachuTail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top:-210px;
+    align-items: flex-end;
+    height: 210px;
+    z-index: 10;
+    transform: rotate(40deg);
+    margin-left:20px;
+}
+
+.pikachuTail1{
+    width: 20px;
+    height: 0px;
+    border-bottom:70px solid #ffc936;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    transform: rotate(-18deg);
+    margin-right:-10px;
+}
+
+.pikachuTail2{
+    width: 35px;
+    height: 60px;
+    background-color: #ffc936;
+    transform: rotate(60deg);
+    margin-top:-38px;
+    margin-right:1px;
+}
+
+.pikachuTail3{
+    width: 25px;
+    height: 30px;
+    background-color: #ffc936;
+    transform: rotate(-30deg);
+    margin-top:-10px;
+    margin-right:13px;
+}
+
+.pikachuTail4{
+    width: 20px;
+    height: 60px;
+    background-color: #ffc936;
+    transform: rotate(60deg);
+    margin-top:-27px;
+    margin-right:36px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom:30px;
+    box-sizing: border-box;
+}
+
+.pikachuTail4 div{
+    width: 2px;
+    height: 0px;
+    border-bottom:15px solid #92461e;
+    border-left:3px solid transparent;
+    border-right:3px solid transparent;
+}
+
+.monsterBall{
+    display: flex;
+    align-items: flex-end;
+    z-index: 500;
+    height: 105px;
+    min-height: 105px;
+}
+
+.monsterBallLayout{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: ball 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball{
+    0%{
+        transform: rotate(0deg);
+    }30%{
+        transform: rotate(5deg);
+        margin-bottom:5px;
+    }60%{
+        transform: rotate(5deg);
+    }100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+.ballTop{
+    width: 100px;
+    height: 50px;
+    background-color: #cf0e1b;
+}
+
+.ballBottom{
+    width: 100px;
+    height: 50px;
+    background-color: #eee;
+}
+
+.ballCenter{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ballCenterLine{
+    width: 40px;
+    height: 10px;
+    background-color: #000;
+}
+
+.ballCenterCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50px;
+    margin:0px -5px 0px -5px;
+}
+
+.ballCenterCircle >div{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50px;
 }

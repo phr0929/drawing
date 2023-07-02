@@ -114,11 +114,11 @@ const Zzanggu =  (()=> {
                 </div>
               </div>
             </div> 
-            <div className='mouse'>
-              <div className='mouseTop'>
+            <div className='mouth'>
+              <div className='mouthTop'>
                 <div></div>
               </div>
-              <div className='mouseBottom'></div>
+              <div className='mouthBottom'></div>
             </div>
           </div>
         </div>
